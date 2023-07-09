@@ -1,6 +1,8 @@
 # HAR-to-Book
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/makhele/HAR-to-book?style=social)](https://github.com/makhele/HAR-to-book/stargazers)
+[![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-orange.svg)](https://www.buymeacoffee.com/makhelesabata)
 
 HAR-to-Book is a Python script that converts a HAR (HTTP Archive) file into a book by extracting images from the HAR file and generating a PDF document.
 
