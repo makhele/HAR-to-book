@@ -1,19 +1,40 @@
-# WHAT THE SCRIPT DOES
-The main.py basically takes the .har file the create a book from the images
+# HAR-to-Book
 
-### BEFORE YOU BEGIN
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-1. Go to the site
-2. Open the Inspect Page (right-click anywhere and select the Inspect option)
-3. Go to the Network tab, then minimize
-4. Browse the book manually (You can click the next button as fast as you can you dont have to wait)
-    - Tip (Zoom in for High quality images)
-5. Once on the last page, there is a button to download the `.HAR` file.
-    - This is just a json file that has all the request you have made, including the images (stored as Base64)
-    - Save the file in `raw` folder rename it to `book.json`
+HAR-to-Book is a Python script that converts a HAR (HTTP Archive) file into a book by extracting images from the HAR file and generating a PDF document.
 
-### RUNNING THE MAIN.PY
+## How it Works
 
-1. The original `.har`, `book.json` and `deep.pdf` are too large and are stored on the [google drive](https://drive.google.com/drive/folders/1b3CN_dxi0plYUyc0ZpQPtmEgsR8Xz-O0?usp=share_link)
-2. All scripts are document
-3. Just Run
+The main.py script takes a `.har` file and creates a book from the images contained within it. The HAR file is a JSON file that stores all the requests made, including the images represented as Base64 strings.
+
+### Prerequisites
+
+Before running the script, follow these steps:
+
+1. Go to the website where you want to create a book.
+2. Open the browser's Developer Tools by right-clicking anywhere on the page and selecting the "Inspect" option.
+3. Switch to the "Network" tab in the Developer Tools and minimize it.
+4. Manually browse through the book, clicking the next button as quickly as possible (you don't have to wait for each image to load).
+   - Tip: Zoom in for high-quality images.
+5. Once you reach the last page, look for a button to download the `.HAR` file.
+   - This file contains all the requests you made, including the images stored as Base64 strings.
+   - Save the file in the "raw" folder and rename it to "book.json".
+
+### Usage
+
+1. Download the original `.har`, `book.json`, and `deep.pdf` files from the [Google Drive](https://drive.google.com/drive/folders/1b3CN_dxi0plYUyc0ZpQPtmEgsR8Xz-O0?usp=share_link).
+2. Make sure you have the following dependencies installed:
+   - Python 3
+   - Pillow library: Install it by running the command `python3 -m pip install --upgrade Pillow`.
+3. Run the script by executing the following command in your terminal or command prompt:
+4. The script will perform the following actions:
+- Convert the `book.json` file into a more manageable format and save it as `sample.json`.
+- Remove unnecessary data from `sample.json` and save the modified version as `sample2.json`.
+- Convert all Base64-encoded images in `sample2.json` into PNG files and save them in the "pageImages" folder.
+- Combine all PNG images into a single PDF document named `deep.pdf`.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
