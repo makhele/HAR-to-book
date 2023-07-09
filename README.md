@@ -29,12 +29,16 @@ Before running the script, follow these steps:
 2. Make sure you have the following dependencies installed:
    - Python 3
    - Pillow library: Install it by running the command `python3 -m pip install --upgrade Pillow`.
-3. Run the script by executing the following command in your terminal or command prompt:
+3. Run the script by executing the following command in your terminal or command prompt: `python3 main.py`.
 4. The script will perform the following actions:
-- Convert the `book.json` file into a more manageable format and save it as `sample.json`.
-- Remove unnecessary data from `sample.json` and save the modified version as `sample2.json`.
-- Convert all Base64-encoded images in `sample2.json` into PNG files and save them in the "pageImages" folder.
-- Combine all PNG images into a single PDF document named `deep.pdf`.
+   - Convert the `book.json` file into a more manageable format and save it as `sample.json`.
+   - Remove unnecessary data from `sample.json` and save the modified version as `sample2.json`.
+   - Convert all Base64-encoded images in `sample2.json` into PNG files and save them in the "pageImages" folder.
+   - Combine all PNG images into a single PDF document named `deep.pdf`.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
