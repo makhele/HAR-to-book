@@ -6,6 +6,12 @@
 
 HAR-to-Book is a Python script that converts a HAR (HTTP Archive) file into a book by extracting images from the HAR file and generating a PDF document.
 
+## Features
+
+- Converts a HAR file into a book
+- Extracts images from the HAR file
+- Generates a PDF document from the extracted images
+
 ## How it Works
 
 The main.py script takes a `.har` file and creates a book from the images contained within it. The HAR file is a JSON file that stores all the requests made, including the images represented as Base64 strings.
